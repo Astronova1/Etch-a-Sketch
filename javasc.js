@@ -6,12 +6,15 @@ for(let i=0; i<16; i++){
     toAdd.appendChild(grid);
  }
 
- const cont = document.querySelector("#container");
+ const body = document.querySelector("body");
+   body.setAttribute("style","display:flex");
+
+ const cont = document.createElement("container");
+ body.appendChild(cont);
  cont.appendChild(toAdd);
- cont.style.display = "flex";
+
 
  const grids = document.querySelectorAll(".grid");
  grids.forEach(grid => {
-    grid.style.border = "2px solid red";
-    grid.style["flex: 1 1 0"];
+   grid.setAttribute("style","width: 50px; height: 20px; border:2px solid red")
  })
