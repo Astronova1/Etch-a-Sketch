@@ -21,22 +21,23 @@ function createVerticalDivs(con){
    }
 }
 
+
  const body = document.querySelector("body");
-   body.setAttribute("style","display:flex;");
+   body.setAttribute("style","display:flex; padding: 0px;");
 
 const main = document.createElement("main");
-   main.setAttribute("style","display:flex; border:2px solid blue; flex: 1; margin:0px");
+   main.setAttribute("style","display:flex; border:0px solid blue; flex: 1 1 0; margin: 0px;");
    body.appendChild(main);
 
  createVerticalDivs("cont");
 
  const conts = document.querySelectorAll(".cont");
  conts.forEach(cont => {
-   cont.setAttribute("style","display: flex; flex-direction: column; margin: 0px; border: 0px ; padding: 0px ;flex: 1 1 auto; border: 2px solid yellow");
+   cont.setAttribute("style","display: flex; flex-direction: column; margin: 0px; border: 0px; padding: 0px;;flex: 1 1 0; border: 1px solid yellow");
  })
 
 
  const grids = document.querySelectorAll(".grid");
  grids.forEach(grid => {
-   grid.setAttribute("style","width:80px; height:40px;border:2px solid red; flex: 1 1 auto");
+   grid.setAttribute("style","width:80px; height:50px;border:0px solid red; flex: 1 1 auto; display: flex");
  });
