@@ -44,7 +44,13 @@ const main = document.createElement("main");
 
  grids.forEach(grid => {
    grid.addEventListener("mouseover", () => {
-   grid.style.backgroundColor = "blue";    
+   grid.style.backgroundColor = "rgb(" + r() + "," + r() + "," + r() + ")";    
  })
 
  });
+
+
+
+ function r(){
+   return Math.floor(Math.random() * 255);
+ }
