@@ -1,4 +1,4 @@
-let gridSize = 4;
+let gridSize = 16;
 let containerWidth = 600;
 let containerHeight = 400;
 
